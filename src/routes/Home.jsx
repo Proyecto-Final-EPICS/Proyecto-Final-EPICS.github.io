@@ -1,6 +1,6 @@
 import React from 'react'
 import Hero from '../components/Home/Hero'
-import Section from '../components/common/Section'
+import Section from '../components/Home/Section'
 
 function Home() {
     return (

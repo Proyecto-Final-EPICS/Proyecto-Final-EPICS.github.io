@@ -1,6 +1,6 @@
 import React from 'react'
-import Title from './Title'
-import GoToButton from './GoToButton'
+import Title from '../common/Title'
+import GoToButton from '../common/GoToButton'
 
 function Section({ title, backgroundColor, buttonColor, textColor, description, buttonTextColor, image }) {
     return (

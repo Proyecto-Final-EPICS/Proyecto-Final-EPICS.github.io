@@ -14,7 +14,7 @@ function Hero() {
                             GitHub
                         </p>
                     </a>
-                    <a href="" className='button border border-black'>
+                    <a href="https://epics.ieee.org/project/increasing-inclusion-of-visually-impaired-people-with-a-mobile-application-for-english-learning/" className='button border border-black'>
                         <img src="./EpicsIEEE.png" alt="" />
                     </a>
                 </div>
