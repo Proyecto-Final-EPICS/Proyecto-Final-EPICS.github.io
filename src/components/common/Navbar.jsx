@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
     const [projects, setProjects] = useState(false)
@@ -8,7 +9,7 @@ function Navbar() {
         <div className='navbar'>
             <ul>
                 <li>
-                    <a href="/">Home</a>
+                    <Link to="/">Home</Link>
                 </li>
                 <li
                     onMouseEnter={
@@ -61,10 +62,10 @@ function Navbar() {
                     }
                 </li>
                 <li>
-                    <a href="/team">Our Team</a>
+                    <Link to="/team">Our Team</Link>
                 </li>
                 <li>
-                    <a href="/socialimpact">Social Impact</a>
+                    <Link to="/socialimpact">Social Impact</Link>
                 </li>
             </ul>
         </div>
