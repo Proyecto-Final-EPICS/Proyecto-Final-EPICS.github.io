@@ -1,70 +1,149 @@
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins/Poppins-Regular.ttf");
+  font-weight: normal;
 }
 
-a {
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins/Poppins-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins/Poppins-Medium.ttf");
   font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins/Poppins-SemiBold.ttf");
+  font-weight: 600;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins/Poppins-Light.ttf");
+  font-weight: 300;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins/Poppins-Thin.ttf");
+  font-weight: 100;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins/Poppins-ExtraLight.ttf");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins/Poppins-ExtraBold.ttf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins/Poppins-Black.ttf");
+  font-weight: 900;
+}
+
+.App {
+  @apply font-Poppins overflow-x-hidden;
+}
+
+/* --Common */
+
+.card {
+  @apply bg-white shadow-lg rounded-lg overflow-hidden px-5 py-3;
+}
+
+h2 {
+  @apply text-4xl font-bold leading-relaxed;
+}
+
+.button {
+  @apply w-52 h-16 font-bold text-3xl rounded-lg flex items-center justify-between px-5 py-3 shadow-lg;
+}
+/* --Navbar-- */
+
+.navbar {
+  @apply px-5 py-3;
+}
+
+.navbar ul {
+  @apply flex flex-row justify-end gap-8;
+}
+
+.navbar ul li a {
+  @apply font-bold text-base hover:underline;
+}
+
+.drop-down-projects {
+  @apply absolute flex gap-10 items-center -translate-x-1/2 z-50;
+  animation: drop-down-projects 0.3s ease-in-out;
+}
+
+@keyframes drop-down-projects {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -10px);
   }
-  a:hover {
-    color: #747bff;
+  100% {
+    opacity: 1;
+    transform: translate(-50%, 0px);
   }
-  button {
-    background-color: #f9f9f9;
-  }
+}
+
+.drop-down-projects > div {
+  @apply flex flex-col gap-5;
+}
+
+.drop-down-projects a {
+  @apply block text-sm font-bold hover:underline;
+}
+
+.drop-down-projects p {
+  @apply text-[10px] font-normal;
+}
+
+/* --Hero-- */
+.hero {
+  @apply flex items-center justify-center w-screen h-auto py-20 gap-28;
+}
+
+/* Section */
+
+.title {
+  @apply flex items-center gap-5 justify-center py-8;
+}
+
+.section {
+  @apply flex flex-col items-center justify-center px-10 pb-10;
+}
+
+.section p {
+  @apply text-start  text-3xl;
+}
+
+.section > div {
+  @apply flex items-center justify-center gap-20;
+}
+
+.part {
+  @apply flex flex-col gap-10 w-1/3;
+}
+
+/* footer */
+
+.footer {
+  @apply flex  items-center justify-center gap-3 py-10;
 }
