@@ -21,6 +21,7 @@ function Home() {
                 description={'An unity application available for Android devices focused on the task of teaching English and teamwork to people whose native language is Spanish.'}
                 image={'./EyeLandBanner.svg'}
                 buttonColor={'bg-secondaryEyeland'}
+                link={'https://proyecto-final-epics.github.io/EyeLand/'}
             />
         </div>
     )

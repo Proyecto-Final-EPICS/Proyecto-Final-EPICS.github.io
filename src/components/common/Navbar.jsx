@@ -39,7 +39,7 @@ function Navbar() {
                                             () => setProject(2)
                                         }
                                     >
-                                        <a href="/projects/2" className='text-primaryEyeland'>eyeland</a>
+                                        <a href="https://proyecto-final-epics.github.io/EyeLand/" className='text-primaryEyeland'>eyeland</a>
                                         <p>
                                             Second project focused on teaching English to visually impaired people and team work
                                         </p>
