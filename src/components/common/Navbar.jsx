@@ -29,7 +29,7 @@ function Navbar() {
                                             () => setProject(1)
                                         }
                                     >
-                                        <a href="/projects/1" className='text-primaryPlayLearn'>Play&Learn</a>
+                                        <a href="https://proyecto-final-epics.github.io/PlayAndLearnWebPage/" className='text-primaryPlayLearn'>Play&Learn</a>
                                         <p>
                                             First project focused on teaching English to visually impaired people
                                         </p>
